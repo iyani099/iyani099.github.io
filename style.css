@@ -17,11 +17,16 @@ body{
   border-style: dotted;
   border-width:0.5em;
   text-align: center;
+  padding: 5px;
 }
 
 .gameExplaination {
   text-align: center;
   margin: auto;
   width: 50%;
+  float: center;
+  font-family: "Courier New";
+  font-size: 2em;
+  
 }
 
