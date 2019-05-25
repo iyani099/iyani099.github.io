@@ -1,9 +1,11 @@
 /* style for welcome header*/
+body{
+  background-color: #A4BAB7;
+}
 .headerDiv {
   background-image: url("background.jpeg");
   font-family: "Courier New";
   font-size: 50px;
-  height: 25%;
   text-align: center;
   color:brown;
 
@@ -14,14 +16,11 @@
   font-size: 30px;
   border-style: dotted;
   border-width:0.5em;
-  background-color: #92D1C3;
   text-align: center;
 }
 
+.gameExplaination {
+  text-align: center;
+  width: 50%;
+}
 
-/*#9F7E69
-#FDF5BF
-#D2BBA0
-#92D1C3
-#8BB8A8
-*/
