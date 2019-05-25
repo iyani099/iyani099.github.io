@@ -1,23 +1,23 @@
-body {
-  background-image: url("background.jpeg"); 
-  
-}
-/* style for welcome note*/
+/* style for welcome header*/
 .headerDiv {
+  background-image: url("background.jpeg");
   font-family: "Courier New";
   font-size: 50px;
   text-align: center;
   color:brown;
 
+/*Welcome message*/
 }
 .welcomeDiv {
   font-family: "Courier New";
   font-size: 30px;
-  margin-left: 25%;
-  width: 50%;
+  border-style: dotted;
+  border-width:0.5em;
   background-color: #92D1C3;
   text-align: center;
 }
+
+
 /*#9F7E69
 #FDF5BF
 #D2BBA0
