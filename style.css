@@ -1,0 +1,26 @@
+body {
+  background-image: url("download.jpeg"); 
+  
+}
+/* style for welcome note*/
+.welcomeDiv {
+  font-family: "Comic Sans MS";
+  font-size: 50px;
+  text-align: center;
+  color:brown;
+
+}
+.startDiv {
+  font-family: "Comic Sans MS";
+  font-size: 30px;
+  margin-left: 25%;
+  width: 50%;
+  background-color: #92D1C3;
+  text-align: center;
+}
+/*#9F7E69
+#FDF5BF
+#D2BBA0
+#92D1C3
+#8BB8A8
+*/
