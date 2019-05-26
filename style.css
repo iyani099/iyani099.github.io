@@ -1,13 +1,13 @@
 /* style for welcome header*/
 body{
-  background-color: #A4BAB7;
+  background-color: #ede7b1;
 }
 .headerDiv {
   background-image: url("background.jpeg");
   font-family: "Courier New";
   font-size: 50px;
   text-align: center;
-  color:brown;
+  color:#d5bbb1;
   padding: 2em, 2em,2em,2em;
 
 /*Welcome message*/
@@ -21,6 +21,7 @@ body{
   margin: auto;
   width: 50%;
   padding: 2em, 2em,2em,2em;
+  color: #3a606e;
   
 }
 
@@ -28,9 +29,10 @@ body{
   text-align: center;
   margin: auto;
   width: 50%;
+  padding: 2em, 2em,2em,2em;
   font-family: "Courier New";
   font-size: 20px;
-  padding: 2em, 2em,2em,2em;
+  color: #3a606e;
   
 }
 .startButton{
@@ -57,8 +59,6 @@ body{
 	padding:12px 23px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #123252;
-	margin: auto;
-	width: 50%;
   
 }
 .startButton:hover {
