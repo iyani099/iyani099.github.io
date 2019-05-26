@@ -115,6 +115,7 @@ body{
 	background:linear-gradient(to bottom, #d1ca98 5%, #d1ca98 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d1ca98', endColorstr='#d1ca98',GradientType=0);
 	background-color:#d1ca98;
+	position: relative;
 	top: 5px;
 }
 .unitButton:active {
@@ -158,6 +159,7 @@ body{
 	background:linear-gradient(to bottom, #d1ca98 5%, #d1ca98 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d1ca98', endColorstr='#d1ca98',GradientType=0);
 	background-color:#d1ca98;
+	position: relative;
 	top: 5px;
 }
 .backButton:active {
