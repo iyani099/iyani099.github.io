@@ -122,7 +122,7 @@ body{
 	top:1px;
 }
 
-.unitButton {
+.backButton {
 	-moz-box-shadow:inset -3px -3px 2px 1px #3a606e;
 	-webkit-box-shadow:inset -3px -3px 2px 1px #3a606e;
 	box-shadow:inset -3px -3px 2px 1px #3a606e;
@@ -141,7 +141,7 @@ body{
 	cursor:pointer;
 	color:#3a606e;
 	font-family:Courier New;
-	font-size:21px;
+	font-size:10px;
 	font-weight:bold;
 	padding:25px 50px;
 	text-decoration:none;
