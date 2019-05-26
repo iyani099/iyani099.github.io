@@ -170,14 +170,14 @@ body{
 .flex-container-unit {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   margin: auto;
   align-items: center;
 }
 .flex-container-front {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
     
