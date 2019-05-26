@@ -115,7 +115,6 @@ body{
 	background:linear-gradient(to bottom, #d1ca98 5%, #d1ca98 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d1ca98', endColorstr='#d1ca98',GradientType=0);
 	background-color:#d1ca98;
-	position: relative;
 	top: 5px;
 }
 .unitButton:active {
@@ -159,26 +158,9 @@ body{
 	background:linear-gradient(to bottom, #d1ca98 5%, #d1ca98 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d1ca98', endColorstr='#d1ca98',GradientType=0);
 	background-color:#d1ca98;
-	position: relative;
 	top: 5px;
 }
 .backButton:active {
 	position:relative;
 	top:10px;
 }
-
-.flex-container-unit {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: auto;
-  align-items: center;
-}
-.flex-container-front {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-    
-
