@@ -172,4 +172,13 @@ body{
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
+  align-items: center;
 }
+.flex-container-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+    
+
