@@ -17,7 +17,6 @@ body{
   border-style: dotted;
   border-width:0.5em;
   text-align: center;
-  padding: 10px;
   margin: 25%;
   width: 50%;
   
@@ -27,7 +26,6 @@ body{
   text-align: center;
   margin: auto;
   width: 50%;
-  float: center;
   font-family: "Courier New";
   font-size: 20px;
   
