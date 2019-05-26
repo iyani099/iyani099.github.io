@@ -78,7 +78,7 @@ body{
 }
 .startButton:active {
 	position:relative;
-	top:1px;
+	top:10px;
 }
 .unitButton {
 	-moz-box-shadow:inset -3px -3px 2px 1px #3a606e;
@@ -119,7 +119,7 @@ body{
 }
 .unitButton:active {
 	position:relative;
-	top:1px;
+	top:10px;
 }
 
 .backButton {
@@ -161,7 +161,7 @@ body{
 }
 .backButton:active {
 	position:relative;
-	top:1px;
+	top:10px;
 }
 
 .flex-container-unit {
