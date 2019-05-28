@@ -20,54 +20,62 @@ let score = 0;
 
 let questions = [
     {
-        question: "________ Is the blending and mixing of of cultures. Adding one culture to another.",
-        choiceA: "The Columbian Exchange",
-        choiceB: "African Slave Trade",
-        choiceC: "Melting Pot",
-        choiceD: "Cultural Defusion",
+        question: "The breakdown of traditions, increased levels of pollution, and the expansion of slums are negative aspects of",
+        choiceA: "Militarism",
+        choiceB: "Collectivism",
+        choiceC: "pogroms",
+        choiceD: "Urbanization",
         correct: "d"
 
     },
     {
-        question: " _______ the ruling empire of Japan during the first global age (18th Century).",
-        choiceA: "Japanese Edict",
-        choiceB: "Qin Dynasty",
-        choiceC: "Tokugawa Shogunate",
-        choiceD: "Mughal Empire",
-        correct: "c" 
+        question: "A major reason the Industrial Revolution began in England was that England possessed",
+        choiceA: "A smooth coastline",
+        choiceB: "Abundant coal and iron resources",
+        choiceC: "Many waterfalls",
+        choiceD: "Numerous mountain ranges",
+        correct: "b" 
     },
     {
-        question: "Under mercantilism, colonies…",
-        choiceA: "had economic freedom",
-        choiceB: "existed solely for the benefit of their governing country",
-        choiceC: "colonies shared equally in the wealth of their governing countries",
-        choiceD: "colonies could only import from their governing countries, but could export all over Europe",
+        question: "During the 1800s, reform legislation passed in Great Britain, France, and Germany led to",
+        choiceA: "Formation of zaibatsu, greater equality for men, and establishment of a banking system",
+        choiceB: "Legalizing trade unions, setting minimum wages, and limiting child labor",
+        choiceC: "Government-owned factories, establishment of five-year plans, and limits placed on immigration",
+        choiceD: "Bans on overseas trade, mandatory military service, and universal suffrage for women",
         correct: "b"   
     },
     {
-        question: "One similarity between the European concept of divine right and the Chinese concept of Mandate of Heaven is the idea that a leader's power",
-        choiceA: "is an inherited right that cannot be taken away.",
-        choiceB: "omes from a higher power than the ruler himself.",
-        choiceC: "can be challenged by his subjects.",
-        choiceD: "should be limited.",
-        correct: "a"   
+        question: "In the late 1800s, one response of workers in England to unsafe working conditions was to",
+        choiceA: "Take control of the government",
+        choiceB: "Return to farming",
+        choiceC: "Set minimum wages",
+        choiceD: "Form labor unions",
+        correct: "d"   
     },
     {
-        question: "Who held the most power before the enlightenment era?",
-        choiceA: "Nobility",
-        choiceB: "The People",
-        choiceC: "Clergy/ Church",
-        choiceD: "All power was equally distributed",
+        question: "A long-term result of the Industrial Revolution in Europe was",
+        choiceA: "An increase in the number of small farms ",
+        choiceB: "A decline in international trade",
+        choiceC: "A general rise in the standard of living",
+        choiceD: "A strengthening of the economic power of the nobility",
         correct: "c"   
     },
     {
-        question: "Which enlightenment thinker said that all humans have the right to “life liberty and property”",
-        choiceA: "John Locke",
-        choiceB: "Montesquieu",
-        choiceC: "Mary Wollstonecraft",
-        choiceD: "Voltaire",
-        correct: "a"   
-    } 
+        question: "The main cause of the mass starvation in Ireland during the 19th century was the",
+        choiceA: "British blockade of Irish ports",
+        choiceB: "Failure of the potato crop",
+        choiceC: "War between Protestants and Catholics in northern Ireland ",
+        choiceD: "Environmental damage caused by coal mining",
+        correct: "b"   
+    },
+    {
+        question: "Which statement is most supported by the ideas of Karl Marx?",
+        choiceA: "Private ownership of businesses helps workers.",
+        choiceB: "Industrialization benefits the wealthy and exploits the poor.",
+        choiceC: "Countries should benefit from the wealth of their colonies.",
+        choiceD: "Industrial capitalism allows workers and employers to work together for a common purpose.",
+        correct: "b"     
+    }
 ]
 const lastQuestionIndex = questions.length - 1;
 let runningQuestionIndex = 0;
