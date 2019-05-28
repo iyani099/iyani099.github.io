@@ -20,52 +20,52 @@ let score = 0;
 
 let questions = [
     {
-        question: "________ Is the blending and mixing of of cultures. Adding one culture to another.",
-        choiceA: "The Columbian Exchange",
-        choiceB: "African Slave Trade",
-        choiceC: "Melting Pot",
-        choiceD: "Cultural Defusion",
-        correct: "d"
+        question: "One of the most important motives for the European “Scramble for Africa” in the late 1800s was that Africa provided a source of ",
+        choiceA: "raw materials used in industry",
+        choiceB: " free labor for the Americas ",
+        choiceC: "technologically innovative practices",
+        choiceD: "technologically innovative practices",
+        correct: "a"
 
     },
     {
-        question: " _______ the ruling empire of Japan during the first global age (18th Century).",
-        choiceA: "Japanese Edict",
-        choiceB: "Qin Dynasty",
-        choiceC: "Tokugawa Shogunate",
-        choiceD: "Mughal Empire",
-        correct: "c" 
+        question: "•France gained control over Algeria. •Great Britain gained control over North America. •Portugal gained control over Angola. What do these statements describe?",
+        choiceA: "imperialism ",
+        choiceB: "revolution ",
+        choiceC: " alliances ",
+        choiceD: "totalitarianism",
+        correct: "a" 
     },
     {
-        question: "Under mercantilism, colonies…",
-        choiceA: "had economic freedom",
-        choiceB: "existed solely for the benefit of their governing country",
-        choiceC: "colonies shared equally in the wealth of their governing countries",
-        choiceD: "colonies could only import from their governing countries, but could export all over Europe",
-        correct: "b"   
-    },
-    {
-        question: "One similarity between the European concept of divine right and the Chinese concept of Mandate of Heaven is the idea that a leader's power",
-        choiceA: "is an inherited right that cannot be taken away.",
-        choiceB: "omes from a higher power than the ruler himself.",
-        choiceC: "can be challenged by his subjects.",
-        choiceD: "should be limited.",
-        correct: "a"   
-    },
-    {
-        question: "Who held the most power before the enlightenment era?",
-        choiceA: "Nobility",
-        choiceB: "The People",
-        choiceC: "Clergy/ Church",
-        choiceD: "All power was equally distributed",
+        question: "During the 19th century, European nations established spheres of influence in China mainly to",
+        choiceA: " introduce Islam to the Chinese people",
+        choiceB: "profit from the ivory trade",
+        choiceC: "gain commercial advantages in China",
+        choiceD: "obtain human rights for Chinese citizens",
         correct: "c"   
     },
     {
-        question: "Which enlightenment thinker said that all humans have the right to “life liberty and property”",
-        choiceA: "John Locke",
-        choiceB: "Montesquieu",
-        choiceC: "Mary Wollstonecraft",
-        choiceD: "Voltaire",
+        question: "A major goal of both the Sepoy Mutiny in India and the Boxer Rebellion in China was to ",
+        choiceA: "rid their countries of foreigners.",
+        choiceB: "expand their respective territories .",
+        choiceC: "receive international military support .",
+        choiceD: "restore an absolute monarch to the throne.",
+        correct: "a"   
+    },
+    {
+        question: "The result of the Opium War in China was similar to the result of Commodore Perry’s expedition to Japan in that both events",
+        choiceA: "increased Western trade and influence in Asia",
+        choiceB: "established European colonies in China and Japan",
+        choiceC: " promoted democratic governments in Asia",
+        choiceD: "increased the economic isolation of China and Japan",
+        correct: "a"   
+    },
+    {
+        question: "A major argument used to support the building of the Suez and Panama Canals was that these waterways would ",
+        choiceA: "shorten trade routes ",
+        choiceB: " strengthen command economies",
+        choiceC: " increase competition for trade ",
+        choiceD: "promote the local economy",
         correct: "a"   
     } 
 ]
