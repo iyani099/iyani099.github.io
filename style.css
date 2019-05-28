@@ -66,7 +66,7 @@ body{
 	text-align: center;
 	width: 25%;
 	position: relative;
-	left: 25%;
+	left: 50%;
 	
 
   
@@ -185,15 +185,7 @@ body{
   color: #3a606e;
 } 
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .example {background: orange;}
-} 
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .example {background: pink;}
-}
 .buttonContainer{
     margin : 20px auto;
     background-color: #ede7b1;
