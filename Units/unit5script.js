@@ -20,53 +20,53 @@ let score = 0;
 
 let questions = [
     {
-        question: "________ Is the blending and mixing of of cultures. Adding one culture to another.",
-        choiceA: "The Columbian Exchange",
-        choiceB: "African Slave Trade",
-        choiceC: "Melting Pot",
-        choiceD: "Cultural Defusion",
-        correct: "d"
+        question: "The term militarism can best be defined as",
+        choiceA: " loyalty to a nation or ethnic group",
+        choiceB: "buildup of armaments in preparation for war",
+        choiceC: "avoidance of military involvement in civil wars",
+        choiceD: " control of territories for economic and political gain",
+        correct: "b"
 
     },
     {
-        question: " _______ the ruling empire of Japan during the first global age (18th Century).",
-        choiceA: "Japanese Edict",
-        choiceB: "Qin Dynasty",
-        choiceC: "Tokugawa Shogunate",
-        choiceD: "Mughal Empire",
+        question: " What was a major cause of World War I?",
+        choiceA: "rebellions in colonial lands in Africa and Asia",
+        choiceB: "expansion of communism into western Europe",
+        choiceC: "militarism in the nations of Europe",
+        choiceD: "inability of the League of Nations to keep the peace",
         correct: "c" 
     },
     {
-        question: "Under mercantilism, colonies…",
-        choiceA: "had economic freedom",
-        choiceB: "existed solely for the benefit of their governing country",
-        choiceC: "colonies shared equally in the wealth of their governing countries",
-        choiceD: "colonies could only import from their governing countries, but could export all over Europe",
-        correct: "b"   
+        question: "The Treaty of Versailles angered many Germans after World War I because the treaty ",
+        choiceA: " divided Germany into Communist and non-Communist zones ",
+        choiceB: "made Germany restore its emperor ",
+        choiceC: "required all German-speaking Europeans to return to Germany",
+        choiceD: " forced Germany to pay large war reparations",
+        correct: "d"   
     },
     {
-        question: "One similarity between the European concept of divine right and the Chinese concept of Mandate of Heaven is the idea that a leader's power",
-        choiceA: "is an inherited right that cannot be taken away.",
-        choiceB: "omes from a higher power than the ruler himself.",
-        choiceC: "can be challenged by his subjects.",
-        choiceD: "should be limited.",
-        correct: "a"   
+        question: "The harsh terms included in the treaties ending World War I have been used to explain the",
+        choiceA: "Armenian massacre in Turkey ",
+        choiceB: "Fascist Revolution in Spain ",
+        choiceC: "Bolshevik Revolution in Russia ",
+        choiceD: "rise of Nazism in Germany",
+        correct: "d"   
     },
     {
-        question: "Who held the most power before the enlightenment era?",
-        choiceA: "Nobility",
-        choiceB: "The People",
-        choiceC: "Clergy/ Church",
+        question: "Japan’s invasion of China in 1937 and Germany’s attack on Poland in 1939 led directly to",
+        choiceA: "the beginning of World War II in Asia and Europe",
+        choiceB: " a meeting at Yalta between the United States and the Soviet Union",
+        choiceC: " a conference at Munich for European leaders",
         choiceD: "All power was equally distributed",
-        correct: "c"   
+        correct: "a"   
     },
     {
-        question: "Which enlightenment thinker said that all humans have the right to “life liberty and property”",
-        choiceA: "John Locke",
-        choiceB: "Montesquieu",
-        choiceC: "Mary Wollstonecraft",
-        choiceD: "Voltaire",
-        correct: "a"   
+        question: "The Nuremberg Trials are considered an important event in the 20th century because they",
+        choiceA: "brought an end to genocide",
+        choiceB: " condemned the use of nuclear weapons",
+        choiceC: ") ruled on provisions for the postwar occupation of Germany",
+        choiceD: "established principles of responsibility for human rights violations",
+        correct: "d"   
     } 
 ]
 const lastQuestionIndex = questions.length - 1;
