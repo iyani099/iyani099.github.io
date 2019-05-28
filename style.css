@@ -127,6 +127,7 @@ body{
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d1ca98', endColorstr='#d1ca98',GradientType=0);
 	background-color:#d1ca98;
 	top: 5px;
+	positions:relative;
 }
 .button:active {
 	position:relative;
