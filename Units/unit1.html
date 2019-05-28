@@ -2,7 +2,7 @@
 <html lang = "en">
     <head>
         <meta charset="UTF-8">
-        <title>Quiz</title>
+        <title>Jasons Trivia</title>
         <link rel = "stylesheet" href = "style.css">
         
     </head>
@@ -17,12 +17,12 @@
         <div id = "question" class = "question">
            
         </div>
-        <div class = "answerContainer">
-            <button class = "button" id = "a"></button>
-            <button class = "button" id = "b"></button>
-            <button class = "button" id = "c"></button>
-            <button class = "button" id = "d"></button>
-            <p id = "score" class = "score"> Score: 0</p>
+        <div class = "answerContainer" id = "answerContainer">
+            <button class = "button" id = "a" onclick="checkAnswer('a')"></button>
+            <button class = "button" id = "b" onclick="checkAnswer('b')"></button>
+            <button class = "button" id = "c" onclick="checkAnswer('c')"></button>
+            <button class = "button" id = "d" onclick="checkAnswer('d')"></button>
+            <p id = "score" class = "score"></p>
             <p id = "timer" class = "time"></p>
         </div>
         <script src = "script.js"></script>  
