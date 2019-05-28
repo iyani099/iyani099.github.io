@@ -9,7 +9,7 @@ const choiceB = document.getElementById("b");
 const choiceC = document.getElementById("c");
 const choiceD = document.getElementById("d");
 
-let count = 15;
+let count = 30;
 
 
 let TIMER;
