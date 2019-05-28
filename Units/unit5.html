@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jasons Trivia</title>
+        <link rel = "stylesheet" href = "style.css">
+        
+    </head>
+
+    <body>
+        <div > 
+            <header class= "headerDiv flex-container-front"> 
+                <h1>Global Trivia</h1>
+            </header>
+        </div>
+        <p id = "questionNumber" class = "questionNumber"></p>
+        <div id = "question" class = "question">
+           
+        </div>
+        <div class = "answerContainer" id = "answerContainer">
+            <button class = "button" id = "a" onclick="checkAnswer('a')"></button>
+            <button class = "button" id = "b" onclick="checkAnswer('b')"></button>
+            <button class = "button" id = "c" onclick="checkAnswer('c')"></button>
+            <button class = "button" id = "d" onclick="checkAnswer('d')"></button>
+            <p id = "score" class = "score"></p>
+            <p id = "timer" class = "time"></p>
+        </div>
+        <script src = "unit5script.js"></script>  
+    </body>
+</html>
 
