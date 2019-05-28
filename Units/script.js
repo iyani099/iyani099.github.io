@@ -1,79 +1,71 @@
-const start = document.getElementById("start");
-
-const quiz = document.getElementById("quiz");
-
 const question = document.getElementById("question");
-
-const counter = document.getElementById("counter");
-
-const questionTime = 10;
-const guageWidth = 150;
-const guageProgressUnit = guageWidth/questionTime;
-let count = 0;
-let TIMER;
-
-const timeGuage = document.getElementById("timeGuage");
+const questionNumber = document.getElementById("questionNumber");
+const timer = document.getElementById("timer")
 
 const choiceA = document.getElementById("a");
 const choiceB = document.getElementById("b");
 const choiceC = document.getElementById("c");
 const choiceD = document.getElementById("d");
 
-const progress = document.getElementById("progress")
+let count = 10;
 
-const scoreContainer = document.getElementById("scoreContainer")
 
-const scoreDiv = document.getElementById("score")
+let TIMER;
 
-let count = 0;
+
+
 
 let questions = [
     {
-        question: "Question 1",
-        choiceA: "choice a",
-        choiceB: "choice b",
-        choiceC: "choice C",
-        choiceD: "choice d",
-        correct: "a"
+        question: "________ Is the blending and mixing of of cultures. Adding one culture to another.",
+        choiceA: "The Columbian Exchange",
+        choiceB: "African Slave Trade",
+        choiceC: "Melting Pot",
+        choiceD: "Cultural Defusion",
+        correct: "d"
 
     },
     {
-        question: "Question 2",
-        choiceA: "choice a",
-        choiceB: "choice b",
-        choiceC: "choice C",
-        choiceD: "choice d",
-        correct: "a" 
+        question: " _______ the ruling empire of Japan during the first global age (18th Century).",
+        choiceA: "Japanese Edict",
+        choiceB: "Qin Dynasty",
+        choiceC: "Tokugawa Shogunate",
+        choiceD: "Mughal Empire",
+        correct: "c" 
     }
 ]
-
 const lastQuestionIndex = questions.length - 1;
 let runningQuestionIndex = 0;
 
 function renderQuestion(){
     let q = questions[runningQuestionIndex]
 
-    question.innerHTML = "<p>" + q.question + "</p>";
-    choiceA.innerHTML = "choice A"
+    question.innerHTML = q.question ;
+    questionNumber.innerHTML = "Question: " + (runningQuestionIndex+1)
+    choiceA.innerHTML = q.choiceA;
     choiceB.innerHTML = q.choiceB;
     choiceC.innerHTML = q.choiceC;
     choiceD.innerHTML = q.choiceD;
 
-}
-start.style.display = "none";
-renderQuestion();
-quiz.style.display = "block";
-renderProgress();
 
-function renderProgress(){
-    for(let qIndex = 0; qIndex <= lastQuestionIndex; qIndex ++){
-        progress.innerHTML += "<div class = 'prog' id = "+qIndex+ "></div>"; 
+}
+
+function renderCount(){
+    if(count > 0){
+        timer.innerHTML = count
+        count--;
+    }
+    else{
+        count = 10;
     }
 }
 
 
+function startQuiz(){
+    renderQuestion()
+    renderCount()
+    TIMER = setInterval(renderCount, 1000)
+}
 
-
-
-
+startQuiz()
 
