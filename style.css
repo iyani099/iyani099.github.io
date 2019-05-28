@@ -194,4 +194,23 @@ body{
 @media only screen and (min-width: 1200px) {
   .example {background: pink;}
 }
+.buttonContainer{
+    margin : 20px auto;
+    background-color: #ede7b1;
+    height: 500px;
+    width : 1000px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px;
+    position: relative;
+    text-align: center;
+	
+}
 
+	
+	
+	
+	
+	
+	
+	
+	
