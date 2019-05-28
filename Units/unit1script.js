@@ -3,6 +3,9 @@ const questionNumber = document.getElementById("questionNumber");
 const timer = document.getElementById("timer")
 const scoreText = document.getElementById("score")
 const answerContainer = document.getElementById("answerContainer")
+const results = document.getElementById("results")
+const backToUnit = document.getElementById("backToUnit")
+
 
 const choiceA = document.getElementById("a");
 const choiceB = document.getElementById("b");
@@ -15,6 +18,10 @@ let count = 30;
 let TIMER;
 
 let score = 0;
+
+
+
+
 
 
 
@@ -47,7 +54,7 @@ let questions = [
     {
         question: "One similarity between the European concept of divine right and the Chinese concept of Mandate of Heaven is the idea that a leader's power",
         choiceA: "is an inherited right that cannot be taken away.",
-        choiceB: "omes from a higher power than the ruler himself.",
+        choiceB: "ones from a higher power than the ruler himself.",
         choiceC: "can be challenged by his subjects.",
         choiceD: "should be limited.",
         correct: "a"   
@@ -69,14 +76,14 @@ let questions = [
         correct: "a"   
     } 
 ]
-const lastQuestionIndex = questions.length - 1;
+const lastQuestionIndex = questions.length;
 let runningQuestionIndex = 0;
 
 function renderQuestion(){
     let q = questions[runningQuestionIndex]
 
     question.innerHTML = q.question ;
-    questionNumber.innerHTML = "Question: " + (runningQuestionIndex+1)
+    questionNumber.innerHTML = "Question: " + (runningQuestionIndex+1) + "/" + (lastQuestionIndex)
     choiceA.innerHTML = q.choiceA;
     choiceB.innerHTML = q.choiceB;
     choiceC.innerHTML = q.choiceC;
@@ -94,7 +101,17 @@ function renderCount(){
     else{
         count = 30;
         runningQuestionIndex ++;
-        renderQuestion() 
+        if(runningQuestionIndex + 1 < lastQuestionIndex){
+            renderQuestion()
+        }
+        else{
+            runningQuestionIndex = lastQuestionIndex;
+        }
+         
+    }
+    if(runningQuestionIndex == lastQuestionIndex){
+        count = 30;
+        count -= 0;
     }
     
 }
@@ -116,17 +133,30 @@ function checkAnswer(answer){
     else{
         score += 0;
     }
-    if(runningQuestionIndex < lastQuestionIndex){
+    if(runningQuestionIndex + 1 < lastQuestionIndex ){
         runningQuestionIndex ++;
         renderQuestion()
+        console.log(runningQuestionIndex)
+        console.log(lastQuestionIndex)
+    }
+    else{
+        runningQuestionIndex = lastQuestionIndex
+        console.log(runningQuestionIndex)
+        console.log(lastQuestionIndex)
+        endQuiz()
     }
 }
 
 function endQuiz(){
-    if(runningQuestionIndex >= lastQuestionIndex){
-        answerContainer.style.display = "none"
+    if(runningQuestionIndex == lastQuestionIndex){
+        answerContainer.style.display = "block"
+        backToUnit.style.display = "block"
+        results.innerHTML = "Final Score: " + score + "/" + questions.length;
+        console.log("end quiz")
+
     }
 }
-endQuiz()
+
 startQuiz()
+
 
