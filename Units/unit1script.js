@@ -1,162 +1,35 @@
-const question = document.getElementById("question");
-const questionNumber = document.getElementById("questionNumber");
-const timer = document.getElementById("timer")
-const scoreText = document.getElementById("score")
-const answerContainer = document.getElementById("answerContainer")
-const results = document.getElementById("results")
-const backToUnit = document.getElementById("backToUnit")
-
-
-const choiceA = document.getElementById("a");
-const choiceB = document.getElementById("b");
-const choiceC = document.getElementById("c");
-const choiceD = document.getElementById("d");
-
-let count = 30;
-
-
-let TIMER;
-
-let score = 0;
-
-
-
-
-
-
-
-let questions = [
-    {
-        question: "________ Is the blending and mixing of of cultures. Adding one culture to another.",
-        choiceA: "The Columbian Exchange",
-        choiceB: "African Slave Trade",
-        choiceC: "Melting Pot",
-        choiceD: "Cultural Defusion",
-        correct: "d"
-
-    },
-    {
-        question: " _______ the ruling empire of Japan during the first global age (18th Century).",
-        choiceA: "Japanese Edict",
-        choiceB: "Qin Dynasty",
-        choiceC: "Tokugawa Shogunate",
-        choiceD: "Mughal Empire",
-        correct: "c" 
-    },
-    {
-        question: "Under mercantilism, colonies…",
-        choiceA: "had economic freedom",
-        choiceB: "existed solely for the benefit of their governing country",
-        choiceC: "colonies shared equally in the wealth of their governing countries",
-        choiceD: "colonies could only import from their governing countries, but could export all over Europe",
-        correct: "b"   
-    },
-    {
-        question: "One similarity between the European concept of divine right and the Chinese concept of Mandate of Heaven is the idea that a leader's power",
-        choiceA: "is an inherited right that cannot be taken away.",
-        choiceB: "ones from a higher power than the ruler himself.",
-        choiceC: "can be challenged by his subjects.",
-        choiceD: "should be limited.",
-        correct: "a"   
-    },
-    {
-        question: "Who held the most power before the enlightenment era?",
-        choiceA: "Nobility",
-        choiceB: "The People",
-        choiceC: "Clergy/ Church",
-        choiceD: "All power was equally distributed",
-        correct: "c"   
-    },
-    {
-        question: "Which enlightenment thinker said that all humans have the right to “life liberty and property”",
-        choiceA: "John Locke",
-        choiceB: "Montesquieu",
-        choiceC: "Mary Wollstonecraft",
-        choiceD: "Voltaire",
-        correct: "a"   
-    } 
-]
-const lastQuestionIndex = questions.length;
-let runningQuestionIndex = 0;
-
-function renderQuestion(){
-    let q = questions[runningQuestionIndex]
-
-    question.innerHTML = q.question ;
-    questionNumber.innerHTML = "Question: " + (runningQuestionIndex+1) + "/" + (lastQuestionIndex)
-    choiceA.innerHTML = q.choiceA;
-    choiceB.innerHTML = q.choiceB;
-    choiceC.innerHTML = q.choiceC;
-    choiceD.innerHTML = q.choiceD;
-
-
-}
-
-function renderCount(){
-    if(count >= 0 && runningQuestionIndex < (lastQuestionIndex + 1)){
-        timer.innerHTML = "Time:" + count
-        count--;
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jasons Trivia</title>
+        <link rel = "stylesheet" href = "style.css">
         
-    }
-    else{
-        count = 30;
-        runningQuestionIndex ++;
-        if(runningQuestionIndex + 1 < lastQuestionIndex){
-            renderQuestion()
-        }
-        else{
-            runningQuestionIndex = lastQuestionIndex;
-        }
-         
-    }
-    if(runningQuestionIndex == lastQuestionIndex){
-        count = 30;
-        count -= 0;
-    }
-    
-}
+    </head>
 
-
-function startQuiz(){
-    renderQuestion()
-    renderCount()
-    TIMER = setInterval(renderCount, 1000)
-    scoreText.innerHTML = "Score: " + score
-}
-
-function checkAnswer(answer){
-    count = 30;
-    if(answer == questions[runningQuestionIndex].correct ){
-        score ++;
-        scoreText.innerHTML = "Score: " + score;
-    }
-    else{
-        score += 0;
-    }
-    if(runningQuestionIndex + 1 < lastQuestionIndex ){
-        runningQuestionIndex ++;
-        renderQuestion()
-        console.log(runningQuestionIndex)
-        console.log(lastQuestionIndex)
-    }
-    else{
-        runningQuestionIndex = lastQuestionIndex
-        console.log(runningQuestionIndex)
-        console.log(lastQuestionIndex)
-        endQuiz()
-    }
-}
-
-function endQuiz(){
-    if(runningQuestionIndex == lastQuestionIndex){
-        answerContainer.style.display = "block"
-        backToUnit.style.display = "block"
-        results.innerHTML = "Final Score: " + score + "/" + questions.length;
-        console.log("end quiz")
-
-    }
-}
-
-startQuiz()
-
-
+    <body>
+        <div > 
+            <header class= "headerDiv flex-container-front"> 
+                <h1>Global Trivia</h1>
+            </header>
+        </div>
+        <p id = "questionNumber" class = "questionNumber"></p>
+        <div id = "question" class = "question">
+           
+        </div>
+        <div class = "answerContainer" id = "answerContainer">
+            <button class = "button" id = "a" onclick="checkAnswer('a')"></button>
+            <button class = "button" id = "b" onclick="checkAnswer('b')"></button>
+            <button class = "button" id = "c" onclick="checkAnswer('c')"></button>
+            <button class = "button" id = "d" onclick="checkAnswer('d')"></button>
+            
+            <p id = "score" class = "score"></p>
+            <p id = "timer" class = "time"></p>
+        </div>
+        <div id = "endGame" class = "endGame">
+            <p id = "results"></p>
+            <button class="button" id = "backToUnit" style="display:none" onclick="location.href = 'subject.html';"> < Back To Units</button>
+        </div>
+        <script src = "script.js"></script>  
+    </body>
+</html>
