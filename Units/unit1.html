@@ -1,41 +1,32 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jasons Trivia</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <script src="script.js"></script>
- <!-- Header for Welcome Screen-->
-  <div > 
-   <header class= "headerDiv flex-container-front"> 
-    <h1>Global Trivia</h1>
-    </header>
-  </div>
-  <div>
-    <hr style = "margin-top: 20px">
-    <p id = "question"></p>
-    <div>
-      <button class = "button" id = "btn1"><span id = "choice1">Choice 1</span></button>
-      <button class = "button" id = "btn2"><span id = "choice2">Choice 2</span></button>
-      <button class = "button" id = "btn3"><span id = "choice3">Choice 3</span></button>
-      <button class = "button" id = "btn4"><span id = "choice4">Choice 4</span></button>
-    </div>
-    <hr style = "margin-top: 50px">
-    <footer>
-      <p id = "progress">Question 1/5</p>
-    </footer>
-  </div>
-  
-    <script scr = "quizController.js"></script>
-    <script scr = "questions.js"></script>
-    <script scr = "script.js"></script>
-    
-  </body>
- 
- 
- 
-</html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Quiz</title>
+        <link rel = "stylesheet" href = "style.css">
+        
+    </head>
 
+    <body>
+        <div id = "container">
+            <div id = "start"> Start Quiz!</div>
+            <div id = "quiz" >    
+                <div id = "question"></div>
+                <div id = "choices">
+                    <div class = "choice" onclick="checkAnswer('a')"> <p id = "a"></p> </div>
+                    <div class = "choice" id = "b" onclick="checkAnswer('b')"></div>
+                    <div class = "choice" id = "c" onclick="checkAnswer('c')"></div>
+                    <div class = "choice" id = "d" onclick="checkAnswer('d')"></div>
+                </div>
+                <div id = "timer">
+                    <div id= "counter"></div>
+                    <div id = "btimeGuage"></div>
+                    <div id= "timeGuage"></div>
+                </div>
+                <div id = "progress"></div>
+            </div>
+            <div id = "score" style="display: none">
+        </div>
+        <script src = "script.js"></script>  
+    </body>
+</html>
