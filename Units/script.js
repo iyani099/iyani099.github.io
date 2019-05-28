@@ -86,13 +86,13 @@ function renderQuestion(){
 }
 
 function renderCount(){
-    if(count >= 0 && runningQuestionIndex < lastQuestionIndex){
+    if(count >= 0 && runningQuestionIndex < (lastQuestionIndex + 1)){
         timer.innerHTML = "Time:" + count
         count--;
         
     }
     else{
-        count = 10;
+        count = 30;
         runningQuestionIndex ++;
         renderQuestion() 
     }
@@ -108,8 +108,8 @@ function startQuiz(){
 }
 
 function checkAnswer(answer){
-    count = 10;
-    if(answer == questions[runningQuestionIndex].correct && score < ((lastQuestionIndex+1)-runningQuestionIndex)){
+    count = 30;
+    if(answer == questions[runningQuestionIndex].correct ){
         score ++;
         scoreText.innerHTML = "Score: " + score;
     }
@@ -127,6 +127,6 @@ function endQuiz(){
         answerContainer.style.display = "none"
     }
 }
-
+endQuiz()
 startQuiz()
 
