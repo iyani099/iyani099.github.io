@@ -20,21 +20,21 @@ let score = 0;
 
 let questions = [
     {
-        question: "________ Is the blending and mixing of of cultures. Adding one culture to another.",
-        choiceA: "The Columbian Exchange",
-        choiceB: "African Slave Trade",
-        choiceC: "Melting Pot",
-        choiceD: "Cultural Defusion",
+        question: "One reason	the	Fascist	governments	of	Benito Mussolini	and	Adolf	Hitler	came	to	power	in	Italy and Germany	was	that these nations",
+        choiceA: "were	threatened	by	the	United	States",
+        choiceB: "supported	civil	liberties	for	all",
+        choiceC: "failed to	join the League	of	Nations",
+        choiceD: " faced economic and	political difficulties",
         correct: "d"
 
     },
     {
-        question: " _______ the ruling empire of Japan during the first global age (18th Century).",
-        choiceA: "Japanese Edict",
-        choiceB: "Qin Dynasty",
-        choiceC: "Tokugawa Shogunate",
-        choiceD: "Mughal Empire",
-        correct: "c" 
+        question: " 	Which	type	of	political	system	did	V.	I.	Lenin, Adolf	Hitler,	and	Benito	Mussolini	establish in their	countries?",
+        choiceA: "constitutional	monarchy",
+        choiceB: "totalitarianism",
+        choiceC: "representative democracy",
+        choiceD: "theocracy",
+        correct: "b" 
     },
     {
         question: "Under mercantilism, colonies…",
