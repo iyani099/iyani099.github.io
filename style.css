@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+li{
+ text-align: center;
+}
 
 /* style for welcome header*/
 body{
