@@ -67,6 +67,22 @@ let questions = [
         choiceC: " increase competition for trade ",
         choiceD: "promote the local economy",
         correct: "a"   
+    }, 
+    {
+        question: "What was one impact of industrialization on Japan during the Meiji Restoration? ",
+        choiceA: "Japan became more isolated from world affairs. ",
+        choiceB: " Demand for natural resources increased.",
+        choiceC: " Japan became a colonial possession of China",
+        choiceD: "Traditional practices of Bushido were reintroduced.",
+        correct: "b"   
+    },
+    {
+        question: "Between the late 1800s and the end of World War II, Japan implemented a policy of imperialism mainly because Japan",
+        choiceA: "admired the economic power of China",
+        choiceB: " lacked coal, iron, and other important resources",
+        choiceC: " wanted to unify the governments of East Asia  ",
+        choiceD: " feared the expansion of Nazi Germany in the Pacific",
+        correct: "a"   
     } 
 ]
 const lastQuestionIndex = questions.length - 1;
