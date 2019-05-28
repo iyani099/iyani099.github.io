@@ -19,6 +19,12 @@ let TIMER;
 
 let score = 0;
 
+
+
+
+
+
+
 let questions = [
     {
         question: "The breakdown of traditions, increased levels of pollution, and the expansion of slums are negative aspects of",
