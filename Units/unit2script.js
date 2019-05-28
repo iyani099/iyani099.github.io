@@ -20,53 +20,69 @@ let score = 0;
 
 let questions = [
     {
-        question: "________ Is the blending and mixing of of cultures. Adding one culture to another.",
-        choiceA: "The Columbian Exchange",
-        choiceB: "African Slave Trade",
-        choiceC: "Melting Pot",
-        choiceD: "Cultural Defusion",
+        question: "Which issue was a cause of the French Revolution?",
+        choiceA: "ineffective rule of Napoleon Bonaparte ",
+        choiceB: " nationalization of the Church ",
+        choiceC: "outrage over the use of the guillotine by the Committee of Public Safety",
+        choiceD: "demand of the Third Estate for more political power ",
         correct: "d"
 
     },
     {
-        question: " _______ the ruling empire of Japan during the first global age (18th Century).",
-        choiceA: "Japanese Edict",
-        choiceB: "Qin Dynasty",
-        choiceC: "Tokugawa Shogunate",
-        choiceD: "Mughal Empire",
-        correct: "c" 
+        question: " Which geographic feature presented an obstacle to Simón Bolívar's forces?",
+        choiceA: " Sahara Desert ",
+        choiceB: "Andes Mountains ",
+        choiceC: "Great Rift Valley ",
+        choiceD: "Strait of Malacca",
+        correct: "b" 
     },
     {
-        question: "Under mercantilism, colonies…",
-        choiceA: "had economic freedom",
-        choiceB: "existed solely for the benefit of their governing country",
-        choiceC: "colonies shared equally in the wealth of their governing countries",
-        choiceD: "colonies could only import from their governing countries, but could export all over Europe",
+        question: "One major effect of Napoleon's rule of France was that it led to?",
+        choiceA: "an increase in the power of the Roman Catholic Church ",
+        choiceB: "massive emigration to the Americas ",
+        choiceC: "trade agreements with Great Britain ",
+        choiceD: "a restoration of political stability",
+        correct: "d"   
+    },
+    {
+        question: "The struggles for political independence in Latin America during the early 1800s were most directly influenced by the…",
+        choiceA: "Berlin Conference ",
+        choiceB: "doctrine of liberation theology ",
+        choiceC: "writings of Count Camillo di Cavour.",
+        choiceD: "American and French Revolutions .",
+        correct: "d"   
+    },
+    {
+        question: "The Enlightenment and the American Revolution were both major influences on 19th century uprisings in...",
+        choiceA: " Latin America",
+        choiceB: "the Middle East",
+        choiceC: "Vietnam ",
+        choiceD: "Japan",
+        correct: "a"   
+    },
+    {
+        question: "One political objective of both Otto von Bismarck and Giuseppe Garibaldi was to ",
+        choiceA: "overthrow divine right monarchies ",
+        choiceB: "unify their nations",
+        choiceC: "establish communist systems ",
+        choiceD: "form an alliance with Great Britain",
         correct: "b"   
     },
     {
-        question: "One similarity between the European concept of divine right and the Chinese concept of Mandate of Heaven is the idea that a leader's power",
-        choiceA: "is an inherited right that cannot be taken away.",
-        choiceB: "omes from a higher power than the ruler himself.",
-        choiceC: "can be challenged by his subjects.",
-        choiceD: "should be limited.",
+        question: "Which individual is associated with the phrase blood and iron as related to the unification of Germany? ",
+        choiceA: "Otto von Bismarck ",
+        choiceB: "Giuseppe Garibaldi ",
+        choiceC: "Kaiser Wilhelm II  ",
+        choiceD: "Count Camillo di Cavour",
         correct: "a"   
-    },
+    }, 
     {
-        question: "Who held the most power before the enlightenment era?",
-        choiceA: "Nobility",
-        choiceB: "The People",
-        choiceC: "Clergy/ Church",
-        choiceD: "All power was equally distributed",
-        correct: "c"   
-    },
-    {
-        question: "Which enlightenment thinker said that all humans have the right to “life liberty and property”",
-        choiceA: "John Locke",
-        choiceB: "Montesquieu",
-        choiceC: "Mary Wollstonecraft",
-        choiceD: "Voltaire",
-        correct: "a"   
+        question: "“Not by democracy or liberal standards will our goal be achieved but by blood and iron. Then we will be successful, no nation is born without the traumatic experience of war.” — Otto von Bismarck: This statement was used to justify a policy of  ",
+        choiceA: "ethnocentrism ",
+        choiceB: "militarism ",
+        choiceC: "Containment  ",
+        choiceD: "appeasement",
+        correct: "b"   
     } 
 ]
 const lastQuestionIndex = questions.length - 1;
