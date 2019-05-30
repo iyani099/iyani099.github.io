@@ -9,7 +9,7 @@ const choiceB = document.getElementById("b");
 const choiceC = document.getElementById("c");
 const choiceD = document.getElementById("d");
 
-let count = 30;
+let count = 75;
 
 
 let TIMER;
@@ -29,7 +29,7 @@ let questions = [
 
     },
     {
-        question: " 	Which	type	of	political	system	did	V.	I.	Lenin, Adolf	Hitler,	and	Benito	Mussolini	establish in their	countries?",
+        question: " Which	type of	political	system	did	V.	I.	Lenin, Adolf	Hitler,	and	Benito	Mussolini	establish in their	countries?",
         choiceA: "constitutional	monarchy",
         choiceB: "totalitarianism",
         choiceC: "representative democracy",
@@ -37,19 +37,19 @@ let questions = [
         correct: "b" 
     },
     {
-        question: "Under mercantilism, colonies…",
-        choiceA: "had economic freedom",
-        choiceB: "existed solely for the benefit of their governing country",
-        choiceC: "colonies shared equally in the wealth of their governing countries",
-        choiceD: "colonies could only import from their governing countries, but could export all over Europe",
-        correct: "b"   
+        question: "One similarity in the unification of Italy, the Zionist movement, and the breakup of the Ottoman Empire was that each was influenced by ",
+        choiceA: " humanism ",
+        choiceB: "polytheism",
+        choiceC: "nationalism ",
+        choiceD: " imperialism",
+        correct: "c"   
     },
     {
-        question: "One similarity between the European concept of divine right and the Chinese concept of Mandate of Heaven is the idea that a leader's power",
-        choiceA: "is an inherited right that cannot be taken away.",
-        choiceB: "omes from a higher power than the ruler himself.",
-        choiceC: "can be challenged by his subjects.",
-        choiceD: "should be limited.",
+        question: "The policy of appeasement helped cause World War II because this policy",
+        choiceA: "reduced the armaments of major European powers",
+        choiceB: " gave too much power to the United Nations",
+        choiceC: " increased sea trade between England and the United States",
+        choiceD: " allowed the aggressive actions of Germany to go unchecked.",
         correct: "a"   
     },
     {
@@ -92,7 +92,7 @@ function renderCount(){
         
     }
     else{
-        count = 30;
+        count = 75;
         runningQuestionIndex ++;
         renderQuestion() 
     }
@@ -108,7 +108,7 @@ function startQuiz(){
 }
 
 function checkAnswer(answer){
-    count = 30;
+    count = 75;
     if(answer == questions[runningQuestionIndex].correct ){
         score ++;
         scoreText.innerHTML = "Score: " + score;
