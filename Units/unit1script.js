@@ -107,7 +107,7 @@ let questions = [
 const lastQuestionIndex = questions.length;
 let runningQuestionIndex = Math.floor((Math.random()* questions.length));
 console.log(runningQuestionIndex)
-let questionsAnswered = 0;
+let questionsAnswered = 1;
 
 function renderQuestion(){
     let q = questions[runningQuestionIndex]
