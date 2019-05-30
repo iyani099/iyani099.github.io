@@ -165,7 +165,8 @@ function checkAnswer(answer){
         score += 0;
     }
     if(questionsAnswered + 1 < lastQuestionIndex ){
-        runningQuestionIndex = Math.floor((Math.random()* questions.length));;
+        runningQuestionIndex = Math.floor((Math.random()* questions.length));
+        questionsAnswered ++;
         renderQuestion()
         console.log(runningQuestionIndex)
         console.log(lastQuestionIndex)
