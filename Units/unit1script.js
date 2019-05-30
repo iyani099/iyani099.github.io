@@ -106,6 +106,7 @@ let questions = [
 
 const lastQuestionIndex = questions.length;
 let runningQuestionIndex = math.floor((math.random()* questions.length));
+console.log(runningQuestionIndex)
 let questionsAnswered = 0;
 
 function renderQuestion(){
