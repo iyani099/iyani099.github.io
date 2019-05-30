@@ -12,7 +12,7 @@ const choiceB = document.getElementById("b");
 const choiceC = document.getElementById("c");
 const choiceD = document.getElementById("d");
 
-let count = 30;
+let count = 75;
 
 
 let TIMER;
@@ -83,6 +83,30 @@ let questions = [
         choiceD: "Count Camillo di Cavour",
         correct: "a"   
     }, 
+     {
+        question: "One way in which Maximilien Robespierre, Joseph Stalin, Mao Zedong, and Saddam Hussein are similar is that these leaders all ? ",
+        choiceA: " purged their nations of political opponents  ",
+        choiceB: " followed the teachings of Karl Marx  ",
+        choiceC: "supported the ideals of the European Enlightenment  ",
+        choiceD: "obtained their goals through the use of passive resistance",
+        correct: "a"   
+    }, 
+     {
+        question: "At the Congress of Vienna (1815), the governments of Europe reacted to the French Revolution and the rule of Napoleon by attempting to  ",
+        choiceA: "restore old regimes to power ",
+        choiceB: " spread the idea of democracy  ",
+        choiceC: " encourage nationalist movements   ",
+        choiceD: " promote the European free-trade zone",
+        correct: "a"   
+    }, 
+     {
+        question: "One similarity in the leadership of Jomo Kenyatta, José de San Martín, and Sun Yixian (Sun Yat-sen) is that they  ",
+        choiceA: " organized communist rebellions ",
+        choiceB: " supported nationalistic movements  ",
+        choiceC: " opposed trade with other nations ",
+        choiceD: "established democratic rule in their countries",
+        correct: "a"   
+    }, 
     {
         question: "“Not by democracy or liberal standards will our goal be achieved but by blood and iron. Then we will be successful, no nation is born without the traumatic experience of war.” — Otto von Bismarck: This statement was used to justify a policy of  ",
         choiceA: "ethnocentrism ",
@@ -116,7 +140,7 @@ function renderCount(){
         
     }
     else{
-        count = 30;
+        count = 75;
         runningQuestionIndex ++;
         if(runningQuestionIndex + 1 < lastQuestionIndex){
             renderQuestion()
@@ -127,7 +151,7 @@ function renderCount(){
          
     }
     if(runningQuestionIndex == lastQuestionIndex){
-        count = 30;
+        count = 75;
         count -= 0;
     }
     
@@ -142,7 +166,7 @@ function startQuiz(){
 }
 
 function checkAnswer(answer){
-    count = 30;
+    count = 75;
     if(answer == questions[runningQuestionIndex].correct ){
         score ++;
         scoreText.innerHTML = "Score: " + score;
