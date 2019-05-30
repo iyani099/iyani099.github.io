@@ -5,6 +5,8 @@ const scoreText = document.getElementById("score")
 const answerContainer = document.getElementById("answerContainer")
 const results = document.getElementById("results")
 const backToUnit = document.getElementById("backToUnit")
+const math = require("math.js")
+
 
 
 const choiceA = document.getElementById("a");
@@ -100,8 +102,11 @@ let questions = [
         correct: "a" 
     } 
 ]
+        
+
 const lastQuestionIndex = questions.length;
-let runningQuestionIndex = 0;
+let runningQuestionIndex = math.floor((math.random()* questions.length));
+let questionsAnswered = 0;
 
 function renderQuestion(){
     let q = questions[runningQuestionIndex]
@@ -124,16 +129,17 @@ function renderCount(){
     }
     else{
         count = 75;
-        runningQuestionIndex ++;
+        runningQuestionIndex = math.floor((math.random()* questions.length));
+        questionsAnswered ++;
         if(runningQuestionIndex + 1 < lastQuestionIndex){
             renderQuestion()
         }
         else{
-            runningQuestionIndex = lastQuestionIndex;
+            questionsAnswered = lastQuestionIndex;
         }
          
     }
-    if(runningQuestionIndex == lastQuestionIndex){
+    if(questionsAnswered == lastQuestionIndex){
         count = 75;
         count -= 0;
     }
@@ -157,14 +163,14 @@ function checkAnswer(answer){
     else{
         score += 0;
     }
-    if(runningQuestionIndex + 1 < lastQuestionIndex ){
-        runningQuestionIndex ++;
+    if(questionsAnswered + 1 < lastQuestionIndex ){
+        runningQuestionIndex = math.floor((math.random()* questions.length));;
         renderQuestion()
         console.log(runningQuestionIndex)
         console.log(lastQuestionIndex)
     }
     else{
-        runningQuestionIndex = lastQuestionIndex
+        questionsAnswered = lastQuestionIndex
         console.log(runningQuestionIndex)
         console.log(lastQuestionIndex)
         endQuiz()
@@ -172,7 +178,7 @@ function checkAnswer(answer){
 }
 
 function endQuiz(){
-    if(runningQuestionIndex == lastQuestionIndex){
+    if(questionsAnswered == lastQuestionIndex){
         answerContainer.style.display = "none"
         backToUnit.style.display = "block"
         results.innerHTML = "Final Score: " + score + "/" + questions.length;
