@@ -130,7 +130,7 @@ function renderCount(){
     }
     else{
         count = 75;
-        runningQuestionIndex = math.floor((math.random()* questions.length));
+        runningQuestionIndex = Math.floor((Math.random()* questions.length));
         questionsAnswered ++;
         if(runningQuestionIndex + 1 < lastQuestionIndex){
             renderQuestion()
@@ -165,7 +165,7 @@ function checkAnswer(answer){
         score += 0;
     }
     if(questionsAnswered + 1 < lastQuestionIndex ){
-        runningQuestionIndex = math.floor((math.random()* questions.length));;
+        runningQuestionIndex = Math.floor((Math.random()* questions.length));;
         renderQuestion()
         console.log(runningQuestionIndex)
         console.log(lastQuestionIndex)
