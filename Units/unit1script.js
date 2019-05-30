@@ -113,7 +113,7 @@ function renderQuestion(){
     let q = questions[runningQuestionIndex]
 
     question.innerHTML = q.question ;
-    questionNumber.innerHTML = "Question: " + (runningQuestionIndex+1) + "/" + (lastQuestionIndex)
+    questionNumber.innerHTML = "Question: " + (questionsAnswered) + "/" + (lastQuestionIndex)
     choiceA.innerHTML = q.choiceA;
     choiceB.innerHTML = q.choiceB;
     choiceC.innerHTML = q.choiceC;
