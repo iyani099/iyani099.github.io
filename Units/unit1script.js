@@ -12,7 +12,7 @@ const choiceB = document.getElementById("b");
 const choiceC = document.getElementById("c");
 const choiceD = document.getElementById("d");
 
-let count = 30;
+let count = 75;
 
 
 let TIMER;
@@ -68,12 +68,36 @@ let questions = [
         correct: "c"   
     },
     {
+        question: "•Maize and potatoes were grown in Europe. •Millions of Africans suffered during the Middle Passage. •Smallpox had devastating effects on indigenous peoples. •Spanish language is used in much of Latin America. Which global interaction is illustrated by these statements? ",
+        choiceA: " Silk Road trade",
+        choiceB: "Crusades ",
+        choiceC: " Columbian Exchange ",
+        choiceD: "Scramble for Africa",
+        correct: "c"   
+    },
+    {
+        question: "The success of the triangular trade system depended on increasing",
+        choiceA: "political independence of the Caribbean nations ",
+        choiceB: " emphasis on free trade in European nations ",
+        choiceC: " slave trade in the Western Hemisphere ",
+        choiceD: " industrialization of the South American colonies",
+        correct: "c"   
+    },
+    {
+        question: "Which statement describes an impact of the Columbian exchange on the lives ofEuropeans?",
+        choiceA: "The combination of new products and ideas promoted economic growth.",
+        choiceB: " Native Americans immigrated to Europe and competed with Europeans for jobs.",
+        choiceC: " Millions of Europeans were killed by new American diseases",
+        choiceD: "Introduction of the Native American religions resulted in the decline of the Roman Catholic Church.",
+        correct: "c"   
+    },
+    {
         question: "Which enlightenment thinker said that all humans have the right to “life liberty and property”",
         choiceA: "John Locke",
         choiceB: "Montesquieu",
         choiceC: "Mary Wollstonecraft",
         choiceD: "Voltaire",
-        correct: "a"   
+        correct: "a" 
     } 
 ]
 const lastQuestionIndex = questions.length;
@@ -99,7 +123,7 @@ function renderCount(){
         
     }
     else{
-        count = 30;
+        count = 75;
         runningQuestionIndex ++;
         if(runningQuestionIndex + 1 < lastQuestionIndex){
             renderQuestion()
@@ -110,7 +134,7 @@ function renderCount(){
          
     }
     if(runningQuestionIndex == lastQuestionIndex){
-        count = 30;
+        count = 75;
         count -= 0;
     }
     
@@ -125,7 +149,7 @@ function startQuiz(){
 }
 
 function checkAnswer(answer){
-    count = 30;
+    count = 75;
     if(answer == questions[runningQuestionIndex].correct ){
         score ++;
         scoreText.innerHTML = "Score: " + score;
