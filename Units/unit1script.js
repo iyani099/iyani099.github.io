@@ -5,7 +5,7 @@ const scoreText = document.getElementById("score")
 const answerContainer = document.getElementById("answerContainer")
 const results = document.getElementById("results")
 const backToUnit = document.getElementById("backToUnit")
-const math = require("math.js")
+
 
 
 
