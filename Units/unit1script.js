@@ -166,8 +166,10 @@ function checkAnswer(answer){
     }
     if(questionsAnswered + 1 < lastQuestionIndex ){
         runningQuestionIndex = Math.floor((Math.random()* questions.length));
+        questions.splice(runningQuestionIndex, 1)
         questionsAnswered ++;
         renderQuestion()
+        
         console.log(runningQuestionIndex)
         console.log(lastQuestionIndex)
     }
@@ -177,6 +179,7 @@ function checkAnswer(answer){
         console.log(lastQuestionIndex)
         endQuiz()
     }
+    
 }
 
 function endQuiz(){
