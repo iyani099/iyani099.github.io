@@ -9,7 +9,7 @@ const choiceB = document.getElementById("b");
 const choiceC = document.getElementById("c");
 const choiceD = document.getElementById("d");
 
-let count = 30;
+let count = 75;
 
 
 let TIMER;
@@ -20,53 +20,53 @@ let score = 0;
 
 let questions = [
     {
-        question: "________ Is the blending and mixing of of cultures. Adding one culture to another.",
-        choiceA: "The Columbian Exchange",
-        choiceB: "African Slave Trade",
-        choiceC: "Melting Pot",
-        choiceD: "Cultural Defusion",
-        correct: "d"
+        question: "What was the main goal of the Truman Doctrine",
+        choiceA: "Elimination of communism",
+        choiceB: "Implementation of the Domino Theory.",
+        choiceC: "Containment of communism",
+        choiceD: "Reconstruction of Western Europe after World War",
+        correct: "c"
 
     },
     {
-        question: " _______ the ruling empire of Japan during the first global age (18th Century).",
-        choiceA: "Japanese Edict",
-        choiceB: "Qin Dynasty",
-        choiceC: "Tokugawa Shogunate",
-        choiceD: "Mughal Empire",
-        correct: "c" 
+        question: "",
+        choiceA: "",
+        choiceB: "",
+        choiceC: "",
+        choiceD: "",
+        correct: "" 
     },
     {
-        question: "Under mercantilism, colonies…",
-        choiceA: "had economic freedom",
-        choiceB: "existed solely for the benefit of their governing country",
-        choiceC: "colonies shared equally in the wealth of their governing countries",
-        choiceD: "colonies could only import from their governing countries, but could export all over Europe",
-        correct: "b"   
+        question: "",
+        choiceA: "",
+        choiceB: "",
+        choiceC: "",
+        choiceD: "",
+        correct: ""   
     },
     {
-        question: "One similarity between the European concept of divine right and the Chinese concept of Mandate of Heaven is the idea that a leader's power",
-        choiceA: "is an inherited right that cannot be taken away.",
-        choiceB: "omes from a higher power than the ruler himself.",
-        choiceC: "can be challenged by his subjects.",
-        choiceD: "should be limited.",
-        correct: "a"   
+        question: "",
+        choiceA: "",
+        choiceB: "",
+        choiceC: "",
+        choiceD: "",
+        correct: ""   
     },
     {
-        question: "Who held the most power before the enlightenment era?",
-        choiceA: "Nobility",
-        choiceB: "The People",
-        choiceC: "Clergy/ Church",
-        choiceD: "All power was equally distributed",
+        question: "",
+        choiceA: "",
+        choiceB: "",
+        choiceC: "",
+        choiceD: "",
         correct: "c"   
     },
     {
-        question: "Which enlightenment thinker said that all humans have the right to “life liberty and property”",
-        choiceA: "John Locke",
-        choiceB: "Montesquieu",
-        choiceC: "Mary Wollstonecraft",
-        choiceD: "Voltaire",
-        correct: "a"   
+        question: "",
+        choiceA: "",
+        choiceB: "",
+        choiceC: "",
+        choiceD: "",
+        correct: ""   
     } 
 ]
 const lastQuestionIndex = questions.length - 1;
@@ -92,7 +92,7 @@ function renderCount(){
         
     }
     else{
-        count = 30;
+        count = 75;
         runningQuestionIndex ++;
         renderQuestion() 
     }
@@ -108,7 +108,7 @@ function startQuiz(){
 }
 
 function checkAnswer(answer){
-    count = 30;
+    count = 75;
     if(answer == questions[runningQuestionIndex].correct ){
         score ++;
         scoreText.innerHTML = "Score: " + score;
