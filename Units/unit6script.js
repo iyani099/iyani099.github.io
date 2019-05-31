@@ -53,20 +53,28 @@ let questions = [
         correct: "a"   
     },
     {
-        question: "Who held the most power before the enlightenment era?",
-        choiceA: "Nobility",
-        choiceB: "The People",
-        choiceC: "Clergy/ Church",
-        choiceD: "All power was equally distributed",
-        correct: "c"   
+        question: "Which leader is most closely associated with the rise of fascism in Italy prior to World War II?",
+        choiceA: " Ho Chi Minh ",
+        choiceB: "  Winston Churchill ",
+        choiceC: " Mao Zedong",
+        choiceD: "  Benito Mussolini.",
+        correct: "d"   
     },
     {
-        question: "Which enlightenment thinker said that all humans have the right to “life liberty and property”",
-        choiceA: "John Locke",
-        choiceB: "Montesquieu",
-        choiceC: "Mary Wollstonecraft",
-        choiceD: "Voltaire",
-        correct: "a"   
+        question: "The Nuremberg Trials are considered an important event in the 20th century because they",
+        choiceA: "  brought an end to genocide ",
+        choiceB: "   condemned the use of nuclear weapons",
+        choiceC: " ruled on provisions for the postwar occupation of Germany",
+        choiceD: "  established principles of responsibility for human rights violations",
+        correct: "d"   
+    },
+    {
+        question: "The rise of fascism in Germany between World War I and World War II is often associated with the",
+        choiceA: "promotion of ethnic diversity ",
+        choiceB: " establishment of a strong parliamentary system",
+        choiceC: " appeal of the doctrine of nonviolence",
+        choiceD: " impact of the global economic depression",
+        correct: "d"   
     } 
 ]
 const lastQuestionIndex = questions.length - 1;
